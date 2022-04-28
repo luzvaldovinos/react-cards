@@ -1,19 +1,19 @@
-import './App.css';
+import React from "react";
+import Card from "./components/Card";
+import data from "./data";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-      </header>
-    </div>
-  );
+  const cards = data.map(item => {
+    return(
+      <Card
+        key={item.id}
+        item={item}
+      />
+    )
+  })
+  return(
+    <section className="cards-list">{cards}</section>
+  )
 }
 
 export default App;
