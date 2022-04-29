@@ -14,4 +14,4 @@ This project was created using Rails & CSS.
 • Go to http://localhost:3000/ to see the project 
 
 
-# react-cards
+
