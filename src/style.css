@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #16193D;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  /* overflow-x: auto; */
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  width: 360px;
+  height: 530px;
+  top: 54px;
+  left: 4px;
+  border-radius: 15px;
+  position: relative;
+  overflow:hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card--title{
+  top: 236px;
+  left: 25%;
+  position: absolute;
+  width: 193px;
+  height: 46px;
+  font-family: 'Overpass';
+  font-style: bold;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  color: #FFFFFF;
+  white-space: nowrap;
+  align-self: center;
+  align-items: center;
+}
+
+.card--text {
+  Top: 321px;
+  Left: 26px;
+  position: absolute;
+  width: 315px;
+  height: 81px;
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.card--image {
+  position: absolute;
+  width: 225px;
+  height: 225px;
+  display: flex;
+  justify-content: center;
+  left: 20%;
+  right: 0%;
+  bottom: 55%;
+}
+
+.card:hover {
+  background:
+    linear-gradient(334.7deg, #FE3688 0%, #73BCFF 94.7%);
+  top: 0px;
+  left: 0px;
+}
+
+.card--gradient {
+  top: 54px;
+  left: 4px;
+  border: 3px solid transparent;
+  perspective: 1px;
+  overflow: hidden;
+  border-collapse: separate;
+  border-radius: 15px;
+  border-image: linear-gradient(to top left,#FE3688, #73BCFF, #B9DCFF, #FE3688) 1;
+  position: relative;
+  mask:
+     linear-gradient(#fff 0 0) padding-box,
+     linear-gradient(#fff 0 0);
+
+}
